@@ -3,6 +3,7 @@
     <head>
         <title>Colmar Academy</title>
         <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <header>
@@ -236,9 +237,62 @@
             </ul>
         </div>
 
+        <!-- Thesis section -->
+
+        <div id="thesis">
+            <h2>Thesis exhibit</h2>
+            <div class="flex-container" id="thesis-flex">
+                <div class="flex-container" id="thesis-banner">
+                    <div class="video-container" id="thesis-video">
+                        <video src="./resources/videos/thesis.mp4" controls>
+                            Video could not be loaded
+                        </video>
+                    </div>
+                    <h2 id="video-title">Reimagine urban</h2>
+                    <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Repellendus cumque autem pariatur dolor ad a fugiat sapiente 
+                    suscipit totam quod deserunt velit temporibus dicta, reiciendis 
+                    vitae, enim aliquam esse molestias."</p>
+                </div>
+
+            <!-- Will display image according to media -->
+            
+                <div class="flex-container" id="thesis-menu">
+                    <a href="#" class="thesisitem" id="thesis1">
+                        <div class="thesis-image-desktop">
+                            <img src="./resources/images/thesis-fisma.jpg" alt="">
+                        </div>
+                        <div class="thesisitem-content">
+                            <h4>Fisma: Design and Prototype</h4>
+                            <p>Designer showcase of new prototype product</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="thesisitem" id="thesis2">
+                        <div class="thesis-image-desktop">
+                            <img src="./resources/images/thesis-now-and-then.jpg" alt="">
+                        </div>
+                        <div class="thesisitem-content">
+                            <h4>Now and then</h4>
+                            <p>Research study about New York</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+         </div>
+
         </main>
     </body>
-    <footer>
 
+    <footer>
+        <div class="flex-container" id="desktop-footer">
+            <p>&copy;2016 Colmar Academy. All rights reserved</p>
+            <nav id="terms">
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </nav>
+        </div>   
     </footer>
 </html>

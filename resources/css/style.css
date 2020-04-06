@@ -7,6 +7,7 @@
 html {
     margin: 0 auto;
     max-width: 1920px;
+    font-family: 'Nunito', sans-serif;
 }
 
 @media screen and (min-width: 640px) and (orientation: landscape){
@@ -330,6 +331,7 @@ main .flex-container {
         width: 65%;
         text-align: left;
         padding: 0 1rem;
+        color: #4F4F4F;
     }
 
     .menuitem-content h4{
@@ -527,4 +529,207 @@ main .flex-container {
         font-size: 6rem;
         font-weight: bold;
     }
+}
+
+/*THESIS SECTION */
+
+/*DESKTOP VERSION*/
+
+@media screen and (min-width: 640px) and (orientation: landscape){
+
+    #thesis {
+        width: 100%;
+        background-color: white;
+        text-align: center;
+    }
+
+    #thesis h2{
+        color: #4F4F4F;
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    #thesis-flex{
+        width: 100%;
+    }
+
+/* LEFT BANNER */
+
+    #thesis-banner {
+        flex-direction: column;
+        text-align: left;
+        max-width: 60%;
+        padding: 2rem 1.5rem;
+        color: #4F4F4F;
+    } 
+    
+    #thesis-video video{
+        max-width: 100%;
+    }
+
+    #video-title {
+        font-size: 1.75rem;
+        max-width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    #thesis-banner p{
+        max-width: 100%;
+        margin-top: 0.5rem;
+        margin-right: 1.5rem;
+        font-size: 1.25rem;
+    }
+
+/* RIGHT MENU SECTION */
+
+    #thesis-menu {
+        max-width: 40%;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .thesisitem{
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        color: #4F4F4F;
+        text-decoration: none;
+    }
+
+    .thesis-image-desktop {
+        width: 35%;
+        margin: 1rem;
+        flex-grow: 1;
+    }
+
+    .thesis-image-desktop img {
+        max-width: 100%;
+    }
+
+    .thesisitem-content {
+        width: 65%;
+        text-align: left;
+        padding: 0 1rem;
+    }
+
+    .thesisitem-content h4{
+        font-size: 1.5rem;
+    }
+
+    .thesisitem-content p{
+        font-size: 0.9rem;
+        font-weight: lighter;
+        margin: 0.5rem 0;
+    }
+
+}
+
+/* MOBILE VERSION */
+
+@media screen and (max-width: 640px) and (orientation:portrait){
+
+    #thesis {
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        padding: 4rem 0;
+    }
+
+    #thesis h2{
+        color: #4F4F4F;
+        font-size: 8rem;
+        margin: 4rem;
+    }
+
+    #thesis-flex{
+        width: 100%;
+    }
+
+    #thesis-banner h2,
+    #thesis-banner p{
+        display:none;
+    }
+
+    #thesis-video video{
+        max-width: 100%;
+        margin-bottom: 6rem;
+    }
+
+    #thesis-menu{
+        display: none;
+    }
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+    position: relative;
+    top: 4rem;
+    bottom: 0px;
+}
+
+/* DESKTOP VERSION */
+
+@media screen and (min-width: 640px) and (orientation: landscape){
+
+    footer {
+        border-top: lightgrey solid 1px;
+    }
+
+    #desktop-footer{
+        display: flex;
+        align-items: flex-start;
+        justify-items: space-between;
+        width: 100%;
+        height: 4rem;
+        max-width: 1920px;
+        background-color: white;
+        padding-top: 1rem;
+        color: #4F4F4F;
+        font-size: 0.75rem;
+    }
+
+    #desktop-footer a {
+        text-decoration: none;
+        color: #4F4F4F;
+    }
+
+    #desktop-footer p{
+        margin-left: 1.5rem;
+    }
+
+    #terms {
+        margin-left: auto;
+        margin-right: 1.5rem;
+        text-align: right;
+    }
+
+    #terms li{
+        display: inline-block;
+        list-style-type: none;
+        padding-left: 1rem;
+    }
+}
+
+/* MOBILE VERSION */
+
+@media screen and (max-width: 640px) and (orientation: portrait){
+
+    #desktop-footer{
+        display: flex;
+        align-items: center;
+        justify-items: space-between;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        padding: 0 2rem 4rem 2rem;
+        color: #4F4F4F;
+        font-size: 3rem;
+    }
+
+    #terms {
+        display: none;
+    }
+
 }

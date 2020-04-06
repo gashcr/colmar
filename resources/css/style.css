@@ -317,8 +317,7 @@ main .flex-container {
     }
 
     .info-image-desktop {
-        max-width: 35%;
-        height: auto;
+        width: 35%;
         margin: 1rem;
         flex-grow: 1;
     }
@@ -328,7 +327,7 @@ main .flex-container {
     }
 
     .menuitem-content {
-        max-width: 65%;
+        width: 65%;
         text-align: left;
         padding: 0 1rem;
     }
@@ -349,8 +348,8 @@ main .flex-container {
         font-weight: lighter;
     }
 
-    #item1, 
-    #item2 {
+    #orientation-menu #item1, 
+    #orientation-menu #item2 {
         border-bottom: lightgrey double 3px;
     }
 }
@@ -413,5 +412,119 @@ main .flex-container {
         font-size: 4rem;
         color: darkturquoise;
         font-weight: lighter;
+    }
+}
+
+
+/* COURSES SECTION */
+
+/* DESKTOP VERSION */
+@media screen and (min-width: 640px) and (orientation: landscape){
+
+    #courses-desktop {
+        padding: 2rem 4rem;
+        background-color: lightgrey;
+        text-align: center;
+    }
+
+    #courses-desktop h2{
+        color: #4F4F4F;
+        font-size: 2.5rem;
+    }
+
+    #courses-menu{
+        flex-flow: row wrap;
+        width: 100%;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+
+    #courses-menu a{
+        flex-basis: calc(100% / 4);
+        margin: 2rem 1rem 0rem 1rem;
+        flex-grow: 1;
+        flex-shrink: 1;
+        color: #4F4F4F;
+        text-decoration: none;
+        text-align: left;
+        font-weight: lighter;
+        font-size: 1rem;
+    }
+
+    .courseitem{
+        display: flex;
+        flex-flow: column nowrap;
+        flex-grow: 1;
+        max-width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+
+    .courses-image-desktop {
+        max-width: 100%;
+    }
+
+    .courses-image-desktop img{
+        width: 100%;
+    }
+
+    .courseitem-content {
+        margin: 1rem 1rem 1.5rem 1rem;
+    }
+
+    .courseitem-content h4{
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .courseitem-content h5{
+        margin: 0.5rem 0;
+        font-size: 1.25rem;
+        font-weight: lighter;
+    }
+
+    #courses-mobile {
+        display: none;
+    }
+}
+
+/* MOBILE VERSION */
+
+@media screen and (max-width: 640px) and (orientation:portrait){
+
+    #courses-desktop {
+        display: none;
+    }
+
+    #courses-mobile {
+        display: block;
+        border-top: lightgray solid 1px;
+        border-bottom: lightgrey solid 1px;
+        padding: 4rem 4rem;
+        text-align: center;
+    }
+
+    #courses-mobile h2{
+        font-size: 8rem;
+        margin: 4rem 0;
+    }
+
+    #courses-mobile ul{
+        margin: 4rem 0;
+    }
+
+    #courses-mobile a{
+        color: #4F4F4F;
+        text-decoration: none;
+    }
+
+    #courses-mobile li{
+        list-style-type: none;
+        background-color: lightgrey;
+        text-align: left;
+        padding: 4rem 4rem 6rem 4rem;
+        margin: 2rem 0;
+        font-size: 6rem;
+        font-weight: bold;
     }
 }

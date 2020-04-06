@@ -9,6 +9,18 @@ html {
     max-width: 1920px;
 }
 
+@media screen and (min-width: 640px) and (orientation: landscape){
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 640px) and (orientation: portrait){
+    html {
+        font-size: 4px;
+    }
+}
+
 /*DESKTOP VERSION HEADER */
 
 @media screen and (min-width: 640px) and (orientation: landscape){
@@ -80,7 +92,7 @@ html {
 
 /* MOBILE VERSION HEADER */
 
-@media screen and (max-width: 640px) , (orientation: portrait){
+@media screen and (max-width: 640px){
 
 
     #desktop-header {
@@ -186,7 +198,7 @@ main .flex-container {
 
 /* BANNER MOBILE VERSION */
 
-@media screen and (max-width: 640px) , (orientation: portrait){
+@media screen and (max-width: 640px){
 
     #banner {
         flex-direction: column;
@@ -207,18 +219,18 @@ main .flex-container {
         max-width: 100%;
         flex-direction: column;
         align-items: center;
-        padding: 2rem 1.5rem;
+        padding: 8rem 6rem;
         text-align: left;
     }
 
     .button {
         background-color: #4F4F4F;
         color: lightgray;
-        padding: 0.5rem;
+        padding: 2rem;
         text-align: center;
         font-weight: bold;
-        font-size: 5rem;
-        margin-top: 1.5rem;
+        font-size: 8rem;
+        margin-top: 6rem;
         flex-shrink: 1;
         width: 100%;
     }
@@ -228,8 +240,8 @@ main .flex-container {
     }
 
     #banner h4{
-        font-size: 6rem;
-        margin-top: 2rem;
+        font-size: 4rem;
+        margin-top: 8rem;
     }
 
     #banner h2, 
@@ -260,11 +272,9 @@ main .flex-container {
         padding: 2rem 1.5rem;
         color: #4F4F4F;
         border-right: lightgrey solid 1px;
-    }
-
-    #orientation-image {
-        margin-bottom: 2rem;
-        flex-grow: 1;
+    } #item1, 
+    #item2 {
+        border-bottom: lightgrey double 3px;
     }
 
     #orientation-image img{
@@ -320,7 +330,7 @@ main .flex-container {
     .menuitem-content {
         max-width: 65%;
         text-align: left;
-        padding-left: 1rem;
+        padding: 0 1rem;
     }
 
     .menuitem-content h4{
@@ -342,5 +352,66 @@ main .flex-container {
     #item1, 
     #item2 {
         border-bottom: lightgrey double 3px;
+    }
+}
+
+/* MOBILE VERSION */
+
+@media screen and (max-width: 640px) and (orientation:portrait){
+
+    #orientation {
+        width: 100%;
+        background-color: white;
+    }
+
+    #orientation-banner {
+        display: none;
+    }
+
+    #orientation-menu {
+        max-width: 100%;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+
+    .info-image-desktop {
+        display: none;
+    }
+
+    .menuitem{
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 0 4rem;
+        margin-bottom: 16rem;
+    }
+
+    .info-image-mobile {
+        margin-bottom: 8rem;
+    }
+
+    .info-image-mobile img {
+        max-width: 100%;
+    }
+
+    .menuitem-content {
+        max-width: 100%;
+        text-align: left;
+        padding-left: 4rem;
+    }
+
+    .menuitem-content h4{
+        font-size: 6rem;
+    }
+
+    .menuitem-content p{
+        font-size: 4rem;
+        font-weight: lighter;
+        margin: 2rem 0;
+    }
+
+    .menuitem-content a{
+        font-size: 4rem;
+        color: darkturquoise;
+        font-weight: lighter;
     }
 }

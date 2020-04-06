@@ -4,10 +4,14 @@
     padding: 0;
 }
 
+html {
+    margin: 0 auto;
+    max-width: 1920px;
+}
 
 /*DESKTOP VERSION HEADER */
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 640px) and (orientation: landscape){
 
     header .flex-container {
         display: flex;
@@ -17,12 +21,12 @@
 
     #desktop-header {
         width: 100%;
+        max-width: 1920px;
         background-color: white;
         position: fixed;
         z-index: 10;
         height: 4rem;
         top: 0px;
-        justify-items: space-between;
     }
 
     #desktop-header a {
@@ -56,13 +60,8 @@
         margin-right: 1.5rem;
     }
 
-    #desktop-nav-menu ul{
-        max-width: 100%;
-        justify-items: space-between;
-        align-items: center;
-    }
-
     #desktop-nav-menu li{
+        display: inline-block;
         list-style-type: none;
         padding-left: 1rem;
         text-align: center;
@@ -81,7 +80,7 @@
 
 /* MOBILE VERSION HEADER */
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 640px) , (orientation: portrait){
 
 
     #desktop-header {
@@ -119,6 +118,8 @@ main {
     position: relative;
     top: 4rem;
     right: 0;
+    margin: 0 auto;
+    max-width: 1920px;
 }
 
 main .flex-container {
@@ -127,7 +128,7 @@ main .flex-container {
 
 /* BANNER DESKTOP VERSION */
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 640px) and (orientation: landscape){
 
     #banner {
         justify-content: flex-start;
@@ -162,15 +163,15 @@ main .flex-container {
         font-weight: bold;
         margin-top: 2rem;
         flex-shrink: 1;
-        width: 85%;
+        width: 82%;
     }
 
     #banner h2{
-        font-size: 3vw;
+        font-size: 3rem;
     }
 
     #banner h4{
-        font-size: 1.5vw;
+        font-size: 1.5rem;
     }
 
     #banner h2, 
@@ -179,5 +180,167 @@ main .flex-container {
         margin-top: 2rem;
         width: 100%;
         flex-shrink: 1;
+    }
+}
+
+
+/* BANNER MOBILE VERSION */
+
+@media screen and (max-width: 640px) , (orientation: portrait){
+
+    #banner {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: lightgray;
+    }
+
+    #bannerimage {
+        width: 100%;
+    }
+
+    #bannerimage img{
+        max-width: 100%;
+    }
+
+    #bannercontent {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1.5rem;
+        text-align: left;
+    }
+
+    .button {
+        background-color: #4F4F4F;
+        color: lightgray;
+        padding: 0.5rem;
+        text-align: center;
+        font-weight: bold;
+        font-size: 5rem;
+        margin-top: 1.5rem;
+        flex-shrink: 1;
+        width: 100%;
+    }
+
+    #banner h2{
+        font-size: 8rem;
+    }
+
+    #banner h4{
+        font-size: 6rem;
+        margin-top: 2rem;
+    }
+
+    #banner h2, 
+    #banner h4 {
+        color: #4F4F4F;
+        width: 100%;
+        flex-shrink: 1;
+    }
+}
+
+/* INFORMATION SECTION */
+
+/*DESKTOP VERSION */
+
+@media screen and (min-width: 640px) and (orientation: landscape){
+
+    #orientation {
+        width: 100%;
+        background-color: white;
+    }
+
+/* LEFT BANNER */
+
+    #orientation-banner {
+        flex-direction: column;
+        text-align: left;
+        max-width: 60%;
+        padding: 2rem 1.5rem;
+        color: #4F4F4F;
+        border-right: lightgrey solid 1px;
+    }
+
+    #orientation-image {
+        margin-bottom: 2rem;
+        flex-grow: 1;
+    }
+
+    #orientation-image img{
+        max-width: 100%;
+    }
+
+    #testimonial {
+        font-size: 2.5rem;
+        max-width: 100%;
+    }
+
+    #orientation-banner p{
+        max-width: 100%;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        margin-right: 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    #testimonial-author{
+        font-size: 1rem;
+    }
+
+/* RIGHT MENU SECTION */
+
+    #orientation-menu {
+        max-width: 40%;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .info-image-mobile {
+        display: none;
+    }
+
+    .menuitem{
+        display: inline-flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    .info-image-desktop {
+        max-width: 35%;
+        height: auto;
+        margin: 1rem;
+        flex-grow: 1;
+    }
+
+    .info-image-desktop img {
+        max-width: 100%;
+    }
+
+    .menuitem-content {
+        max-width: 65%;
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    .menuitem-content h4{
+        font-size: 1.5rem;
+    }
+
+    .menuitem-content p{
+        font-size: 0.9rem;
+        font-weight: lighter;
+        margin: 0.5rem 0;
+    }
+
+    .menuitem-content a{
+        font-size: 0.9rem;
+        color: darkturquoise;
+        font-weight: lighter;
+    }
+
+    #item1, 
+    #item2 {
+        border-bottom: lightgrey double 3px;
     }
 }

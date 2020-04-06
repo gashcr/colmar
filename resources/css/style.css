@@ -16,7 +16,7 @@ html {
     }
 }
 
-@media screen and (max-width: 720px) and (orientation: portrait){
+@media screen and (max-width: 1280px) and (orientation: portrait){
     html {
         font-size: 4px;
     }
@@ -93,7 +93,7 @@ html {
 
 /* MOBILE VERSION HEADER */
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 1280px) and (orientation:portrait){
 
 
     #desktop-header {
@@ -199,7 +199,7 @@ main .flex-container {
 
 /* BANNER MOBILE VERSION */
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 1280px) and (orientation:portrait){
 
     #banner {
         flex-direction: column;
@@ -358,7 +358,7 @@ main .flex-container {
 
 /* MOBILE VERSION */
 
-@media screen and (max-width: 720px) and (orientation:portrait){
+@media screen and (max-width: 1280px) and (orientation:portrait){
 
     #orientation {
         width: 100%;
@@ -492,7 +492,7 @@ main .flex-container {
 
 /* MOBILE VERSION */
 
-@media screen and (max-width: 720px) and (orientation:portrait){
+@media screen and (max-width: 1280px) and (orientation:portrait){
 
     #courses-desktop {
         display: none;
@@ -626,7 +626,7 @@ main .flex-container {
 
 /* MOBILE VERSION */
 
-@media screen and (max-width: 720px) and (orientation:portrait){
+@media screen and (max-width: 1280px) and (orientation:portrait){
 
     #thesis {
         width: 100%;
@@ -714,7 +714,7 @@ footer {
 
 /* MOBILE VERSION */
 
-@media screen and (max-width: 720px) and (orientation: portrait){
+@media screen and (max-width: 1280px) and (orientation: portrait){
 
     #desktop-footer{
         display: flex;
